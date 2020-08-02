@@ -5,9 +5,7 @@ import axios from 'axios';
 
 function App() {
 
-
   useEffect(() => {
-    //여기서 데이터베이스에 있는 값을 가져온다.
     axios.get('/api/hi')
       .then(response => {
         console.log('response', response)
